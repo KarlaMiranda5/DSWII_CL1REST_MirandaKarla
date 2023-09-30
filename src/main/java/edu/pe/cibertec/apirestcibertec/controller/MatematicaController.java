@@ -17,10 +17,16 @@ public class MatematicaController {
     private MatematicaService matematicaService;
 
     @GetMapping("/estacionamiento")
-    public ResponseEntity<MensajeResponse> estacionamiento(@RequestParam Integer numero1,
-                                                @RequestParam Integer numero2){
+    public ResponseEntity<MensajeResponse> estacionamiento(@RequestParam Integer numero1, @RequestParam Integer numero2){
         return new ResponseEntity<>(
                 matematicaService.estacionamiento(numero1, numero2), HttpStatus.OK );
+    }
+
+    @GetMapping("/promedio")
+    public ResponseEntity<MensajeResponse> promedioCibertec(@RequestParam Integer nota1, @RequestParam Integer nota2, @RequestParam Integer nota3){
+        return new ResponseEntity<>(
+                matematicaService.promedioCibertec(nota1, nota2, nota3), HttpStatus.OK
+        );
     }
 
 
