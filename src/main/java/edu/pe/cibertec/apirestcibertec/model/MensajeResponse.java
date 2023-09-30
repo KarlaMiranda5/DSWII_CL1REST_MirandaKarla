@@ -10,5 +10,6 @@ import javax.swing.*;
 public class MensajeResponse {
 
     private Spring resultado;
+    private Integer resultadoEstacionamineto;
 
 }
