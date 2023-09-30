@@ -9,7 +9,7 @@ import javax.swing.*;
 @Builder
 public class MensajeResponse {
 
-    private Spring resultado;
+    private Double resultado;
     private Integer resultadoEstacionamineto;
 
 }
